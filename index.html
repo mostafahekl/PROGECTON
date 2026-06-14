@@ -3,19 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ترند للصيانة | Trend</title>
+  <title>في الطريق للصيانة | On The Way</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
   <!-- Navigation -->
+  <div class="top-path">
+    <div class="container"><span data-key="navHome">الرئيسية</span> / <span data-key="siteName">في الطريق</span> / <span data-key="siteTagline">للصيانة</span></div>
+  </div>
   <nav>
     <div class="container nav-inner">
       <a href="index.html" class="logo">
-        <span data-key="siteName">ترند</span>
+        <span data-key="siteName">في الطريق</span>
         <span data-key="siteTagline">للصيانة</span>
       </a>
-      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('mobile-menu-open')">☰</button>
       <div class="nav-links">
         <a href="index.html" data-key="navHome">الرئيسية</a>
         <a href="#services" data-key="navServices">خدماتنا</a>
@@ -54,45 +56,6 @@
           <div class="stat-number">45</div>
           <div class="stat-label" data-key="stat3">دقيقة متوسط الوصول</div>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Testimonials -->
-  <section class="section testimonials-section" id="reviews">
-    <div class="container">
-      <div class="section-header">
-        <span class="subtitle" data-key="testimonialsSub">عملائنا</span>
-        <h2 data-key="testimonialsTitle">آراء وتقييمات العملاء</h2>
-        <p data-key="testimonialsDesc">أكثر من <strong id="reviewCount">0</strong> تقييم من عملائنا الكرام</p>
-      </div>
-      <div style="overflow:hidden;width:100%;">
-        <div class="testimonials-grid" id="testimonialsTrack1"></div>
-      </div>
-      <div class="testimonials-controls" style="margin-top:24px;">
-        <button class="testimonial-btn" onclick="document.getElementById('reviewFormContainer').classList.toggle('show')" data-key="addReviewBtn">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-          أضف تقييمك
-        </button>
-      </div>
-      <div class="review-form-container" id="reviewFormContainer">
-        <form id="reviewForm" onsubmit="return submitReview(event)">
-          <div class="review-form-row">
-            <input type="text" id="reviewName" placeholder="اسمك" required class="form-control" style="flex:1;">
-            <div class="star-input">
-              <span class="star-input-label" data-key="ratingLabel">تقييمك:</span>
-              <div class="star-rating-input" id="starRatingInput">
-                <span class="star-input-star" data-value="1" onclick="setRating(1)">☆</span>
-                <span class="star-input-star" data-value="2" onclick="setRating(2)">☆</span>
-                <span class="star-input-star" data-value="3" onclick="setRating(3)">☆</span>
-                <span class="star-input-star" data-value="4" onclick="setRating(4)">☆</span>
-                <span class="star-input-star" data-value="5" onclick="setRating(5)">☆</span>
-              </div>
-            </div>
-          </div>
-          <textarea id="reviewText" placeholder="اكتب تقييمك..." required class="form-control" style="min-height:80px;margin-top:12px;"></textarea>
-          <button type="submit" class="btn btn-primary" style="margin-top:12px;" data-key="sendReview">إرسال التقييم</button>
-        </form>
       </div>
     </div>
   </section>
@@ -143,7 +106,7 @@
     <div class="container">
       <div class="section-header">
         <span class="subtitle" data-key="whySub">لماذا نحن</span>
-        <h2 data-key="whyTitle">لماذا تختار ترند؟</h2>
+        <h2 data-key="whyTitle">لماذا تختار في الطريق؟</h2>
         <p data-key="whyDesc">نضع معايير الجودة والثقة في مقدمة أولوياتنا</p>
       </div>
       <div class="why-grid">
@@ -193,6 +156,45 @@
     </div>
   </section>
 
+  <!-- Testimonials -->
+  <section class="section testimonials-section" id="reviews">
+    <div class="container">
+      <div class="section-header">
+        <span class="subtitle" data-key="testimonialsSub">عملائنا</span>
+        <h2 data-key="testimonialsTitle">آراء وتقييمات العملاء</h2>
+        <p data-key="testimonialsDesc">أكثر من <strong id="reviewCount">0</strong> تقييم من عملائنا الكرام</p>
+      </div>
+      <div style="overflow:hidden;width:100%;">
+        <div class="testimonials-grid" id="testimonialsTrack1"></div>
+      </div>
+      <div class="testimonials-controls" style="margin-top:24px;">
+        <button class="testimonial-btn" onclick="document.getElementById('reviewFormContainer').classList.toggle('show')" data-key="addReviewBtn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          أضف تقييمك
+        </button>
+      </div>
+      <div class="review-form-container" id="reviewFormContainer">
+        <form id="reviewForm" onsubmit="return submitReview(event)">
+          <div class="review-form-row">
+            <input type="text" id="reviewName" placeholder="اسمك" required class="form-control" style="flex:1;">
+            <div class="star-input">
+              <span class="star-input-label" data-key="ratingLabel">تقييمك:</span>
+              <div class="star-rating-input" id="starRatingInput">
+                <span class="star-input-star" data-value="1" onclick="setRating(1)">☆</span>
+                <span class="star-input-star" data-value="2" onclick="setRating(2)">☆</span>
+                <span class="star-input-star" data-value="3" onclick="setRating(3)">☆</span>
+                <span class="star-input-star" data-value="4" onclick="setRating(4)">☆</span>
+                <span class="star-input-star" data-value="5" onclick="setRating(5)">☆</span>
+              </div>
+            </div>
+          </div>
+          <textarea id="reviewText" placeholder="اكتب تقييمك..." required class="form-control" style="min-height:80px;margin-top:12px;"></textarea>
+          <button type="submit" class="btn btn-primary" style="margin-top:12px;" data-key="sendReview">إرسال التقييم</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
   <!-- About -->
   <section class="section section-about-bg" id="about">
     <div class="container">
@@ -200,7 +202,7 @@
         <div class="about-text">
           <span class="subtitle" style="color: var(--accent); font-weight: 600; font-size: 14px; letter-spacing: 2px;" data-key="aboutSub">من نحن</span>
           <h2 data-key="aboutTitle">أكثر من 10 سنوات في خدمتك</h2>
-          <p data-key="aboutP1">ترند للصيانة المتكاملة هي شركة رائدة في مجال الصيانة المنزلية والتجارية. نقدم حلولاً متكاملة تشمل جميع أنواع الإصلاحات من سباكة وكهرباء وتكييف ونجارة ودهانات.</p>
+          <p data-key="aboutP1">في الطريق للصيانة المتكاملة هي شركة رائدة في مجال الصيانة المنزلية والتجارية. نقدم حلولاً متكاملة تشمل جميع أنواع الإصلاحات من سباكة وكهرباء وتكييف ونجارة ودهانات.</p>
           <p data-key="aboutP2">نفتخر بفريقنا من الفنيين المدربين والمتخصصين الذين يمتلكون خبرة طويلة في التعامل مع جميع أنواع الأعطال. نضمن لك خدمة سريعة واحترافية بأسعار تنافسية.</p>
           <ul class="features-list">
             <li data-key="feature1">خدمة 24 ساعة طوال أيام الأسبوع</li>
@@ -303,7 +305,7 @@
             <div class="contact-icon">✉️</div>
             <div>
               <div style="font-weight:600;" data-key="email">البريد الإلكتروني</div>
-              <div style="color:var(--text-muted);">info@goldenteam.sa</div>
+              <div style="color:var(--text-muted);">info@ontheway.sa</div>
             </div>
           </div>
           <div class="contact-item">
@@ -364,8 +366,8 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <a href="index.html" class="logo">ترند</a>
-          <p data-key="footerDesc">نقدم خدمات الصيانة المنزلية والتجارية المتكاملة. فريق من الفنيين المحترفين جاهز لخدمتك على مدار الساعة.</p>
+          <a href="index.html" class="logo">في الطريق</a>
+          <p data-key="footerDesc">نقدم خدمات الصيانة المنزلية والتجارية. فريق من الفنيين المحترفين جاهز لخدمتك على مدار الساعة.</p>
         </div>
         <div class="footer-col">
           <h4 data-key="quickLinks">روابط سريعة</h4>
@@ -406,8 +408,8 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <span>&copy; 2026 <span data-key="siteName">ترند</span> للصيانة. جميع الحقوق محفوظة.</span>
-        <span>تصميم وتطوير ترند</span>
+        <span>&copy; 2026 <span data-key="siteName">في الطريق</span> للصيانة. جميع الحقوق محفوظة.</span>
+        <span>تصميم وتطوير في الطريق</span>
       </div>
     </div>
   </footer>
